@@ -1,0 +1,31 @@
+%load_ext autoreload
+%autoreload 2
+%matplotlib inline
+%config InlineBackend.figure_format='retina' 
+%load_ext autotime
+
+from __future__ import division
+from itertools import combinations
+import pandas as pd
+import numpy as np
+import scipy as sp
+import string
+import matplotlib.pyplot as plt
+import seaborn as sns; sns.set();
+plt.rcParams['figure.figsize'] = (12, 8)
+sns.set_style("darkgrid")
+
+rows = 20
+df = pd.DataFrame(data=np.random.randint(0, 6, (rows, 10)), 
+                  index=[x for x in string.ascii_letters[:rows]])
+df['num_missing'] = (df.iloc[:, 0:4] == 0).sum(1)
+df['num_bad_ratings'] = (df.iloc[:, 0:4] <= 3).sum(1)
+df.head()
+
+import os
+user = !whoami
+os.system("kinit -k -t /home/USER/.keytabs/USER.keytab -p USER".replace("USER", user[0]));
+
+# If this path doesn't exist, create it (matches Paul's standards request).
+import sys
+sys.path.append('../src/main/python/')
