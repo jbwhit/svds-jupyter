@@ -6,7 +6,7 @@
 # go to http://conda.pydata.org/miniconda.html
 # ~direct link
 
-step1
+# step1
 wget https://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
 
 # 2. Navigate to Downloads folder
@@ -15,13 +15,13 @@ wget https://repo.continuum.io/miniconda/Miniconda-latest-MacOSX-x86_64.sh
 # 3. Make the installer executable
 # $
 
-step2
+# step2
 chmod +x Miniconda-latest-MacOSX-x86_64.sh
 
 # 4. Run the installer
 # $
 
-step3 -- have to type spacebar and "yes"
+# step3 -- have to type spacebar and "yes"
 ./Miniconda-latest-MacOSX-x86_64.sh
 
 # ~press enter to continue when prompted
@@ -34,7 +34,7 @@ step3 -- have to type spacebar and "yes"
 # $ cd ~
 # $ source .bash_profile
 
-step4
+# step4
 source ~/.bashrc
 
 # ~You should now be able to type "conda info" and see that conda is installed.
@@ -61,7 +61,7 @@ source ~/.bashrc
 # 6. Update conda
 # $
 
-step5
+# step5
 conda update conda -y
 
 # ~you can see a list of your environments (currently only root since we haven’t installed any others yet)
@@ -95,7 +95,7 @@ conda update conda -y
 # 7. Create an environment and install R and anaconda
 # $
 
-step6
+# step6
 conda create -y -n anaconda_r -c r r-irkernel r-recommended r-essentials anaconda
 
 # ~lots of things should download. This may take 5-10 minutes
@@ -128,7 +128,7 @@ conda create -y -n anaconda_r -c r r-irkernel r-recommended r-essentials anacond
 # 10. Install ryp2
 # $
 
-step7
+# step7
 conda install -c r rpy2 -y
 
 # ~type ‘y’ to proceed when prompted
