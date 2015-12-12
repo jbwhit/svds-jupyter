@@ -3,6 +3,7 @@
 
 # In[1]:
 
+# alias startnb='wget --output-document=`date +%Y-%m-%d`.ipynb http://bit.ly/jupyter-start-nb2'
 get_ipython().magic(u'load_ext autoreload')
 get_ipython().magic(u'autoreload 2')
 get_ipython().magic(u'matplotlib inline')
