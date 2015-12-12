@@ -1,5 +1,5 @@
 # Written by Colin Higgins.
-# Updated to run
+# Updated to run as a script by Jonathan Whitmore.
 # Ping me if you have questions or issues, but I might not be able to diagnose much since this worked perfectly for me.
 
 # 1. download miniconda python 2.7 mac 64-bit bash installer
